@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: #4c4c4e;
+    opacity: 1;
+    background-image:  radial-gradient(#8ef193 1.8px, transparent 1.8px), radial-gradient(#8ef193 1.8px, #4c4c4e 1.8px);
+    background-size: 72px 72px;
+    background-position: 0 0,36px 36px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+.navbar, .container{
+    background-color: rgb(189, 189, 189);
+    width: 55%;
+    border-radius: 3px;
+}
+.navbar{
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+input {
+    height: 35px;
+    padding: 0 1em;
+}
+
+.btn, .erase {
+    height: 35px;
+    padding: 0 1em;   
+}
+
+img.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.color{
+    padding: 0 .25em;
+    width: 100px;
+}
+
+.size {
+    width: 6em;
+}
+
+.container{
+    --size: 4;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+    gap: 2px;
+    padding: 3px;
+}
+.pixel{
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+h1 {
+    margin: auto;
+    font-size: 3em;
+    padding-top: 0.2em;
+}
